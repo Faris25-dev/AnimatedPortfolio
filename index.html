@@ -6,28 +6,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/473c5494b9.js" crossorigin="anonymous"></script>
+    
     <title>Portofolio</title>
 </head>
 <header>
     
 </header>
 <body>
+    <script>
+        window.onload = function() {
+          document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+        };
+      </script>
+      
     <div class="container1">
-        <div class="row">
-            <div class="col-12">
+      
         
     
-    <div class="nav">
+    <div class="nav"> <!--I feel this div class is useless-->
         <div class="box1">
-            <button style="border-radius: 2em;">Home</button>
+            <button style="border-radius: 2em;"><a href="#HOME">Home</a></button>
             <button style="border-radius: 2em;">
                 <a href="#ABOUT">About</a></button>
-            <button style="border-radius: 2em;">Projects</button>
-            <button style="border-radius: 2em;">Contact</button>
+            <button style="border-radius: 2em;"><a href="#PROJECTS">Projects</a>"</button>
+            <button style="border-radius: 2em;"><a href="#CONTACT">Contact me</a></button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <div class="container">
+    <div class="container" id="HOME">
+        
         <div class="circle">
         </div>
         <div class="circle"></div>
@@ -40,9 +47,92 @@
                <p style="color: grey; font-size: large;">  I'm a 19-year-old self-taught Front-End Developer. I found my passion for programming after discovering my brother was doing it. What kept me on this journey is that I always find learning new things exciting and facing unfamiliar challenges. In addition to coding, I enjoy building side projects, writing blog posts, and reading books. When I'm not doing anything coding-related, I enjoy spending time with my family and working out. Follow my <a href="https://www.instagram.com/faris_alasad_/?next=%2F" style="color:rgb(174, 240, 75) ;">Instagram</a> to see my journey!</p>
                
         </div>
-            </div>
-                </div>
+            <!-- </div> -->
+                <!-- </div> -->
+                        <div class="projects" id="PROJECTS"> 
+                            <p style="color:rgb(205, 142, 242);">Projects — </p>
+                            <h2>Stuff I've Worked On</h2>
+                            <div class="project-grid">
+                                <div class="project-card" style="background-color: #fcd5ce;" >
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
+                                  <h3 style=" margin-top: 70px; margin-left: 90px;">XO Rumble</h3>
+                                  <p style="margin-top: 80px; margin-left: 60px;">Zustand • React • TypeScript</p>
+                                </div>
+                                <div class="project-card"  style="background-color: #ffc8dd;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    <h3 style=" margin-top: 70px; margin-left: 110px;">Bogetta</h3>
+                                    <p>Next.JS • TypeScript • Prisma • Stripe</p>
+                                </div>
+                                <div class="project-card" style="background-color: #ffd7ba;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
 
-                    </div>
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    <h3 style=" margin-top: 70px; margin-left: 80px;">Bitcoin Game</h3>
+                                    <p>Eth • React • TypeScript • Firebase</p>
+                                </div>
+                                <div class="project-card" style="background-color: #c1f8cf;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    <h3 style=" margin-top: 70px; margin-left: 95px;">Chat App</h3>
+                                    <p  style="margin-top: 80px; margin-left: 65px;">React • TypeScript • Firebase</p>  
+                                </div>
+                                <div class="project-card"  style="background-color: #d0d1ff;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
+
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    <h3 style=" margin-top: 70px; margin-left: 85px;">Netflix Clone</h3>
+                                    <p   style="margin-top: 80px; margin-left: 65px;" >React • TypeScript • Firebase</p>
+                                </div>
+                                <div class="project-card" style="background-color: #b4e4ff;">
+                                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg " style="position:absolute; top:26px; left:335px;"></i> 
+
+                                    <a href="https://github.com/Faris25-dev"><i class="fa-brands fa-github fa-lg " style="color: black;"></i></a>
+                                    
+                                    <h3 style=" margin-top: 70px; margin-left: 60px;">Instagram Clone</h3>
+                                    <p>React • TypeScript • CSS • Firebase</p>
+                                </div>
+                        
+ 
+                                
+                              
+                        </div>
+                        </div>
+                        <div class="ontheweb">
+                            <p style="color:rgb(205, 142, 242);">On The Web — </p>
+                                    <h2>More of my works</h2>
+                                <div class="webgrid">
+                                    <a href="https://github.com/Faris25-dev">
+                                    <div class="web-card">
+                                        <i class="fa-brands fa-github fa-2xl" style=" top: 28px; left: 20px;"></i>
+                                        <p>GitHub</p>
+                                    </div>
+                                </a>
+                                    <a href="https://www.instagram.com/faris_alasad_/">
+                                    <div class="web-card" >
+                                        <i class="fa-brands fa-instagram fa-2xl" style=" top: 28px; left: 20px;"></i>
+                                        <p style="margin-bottom: 25px; margin-left: 215px">Instagram</p>
+                                    </div>
+                                </a>
+                                    <div class="web-card"  >
+                                        <i class="fa-brands fa-linkedin-in fa-2xl"  style=" top: 28px; left: 20px;"></i>
+                                        <p style="margin-bottom: 25px; margin-left: 235px">Linkedin</p>
+                                    </div>
+                                    
+                                    <div class="web-card">
+                                        <i class="fa-solid fa-blog fa-2xl" style=" top: 28px; left: 20px;"g></i>
+                                        <p style="margin-bottom: 25px; margin-left: 260px;" >Blog</p>
+                                    </div>
+                                
+                                </div>                            
+                        </div>
+                        <div class="contact" id="CONTACT" style="margin-top: 20px;">
+                            <p style="color:rgb(205, 142, 242);">Contact — </p>
+                            <h4 class="aboutname">Look Who's Here<br></h4>
+                            <p style="color: grey; font-size: x-large;">The fastest way to get in touch with me is to send me a message on <a href="" style="color: #c1f8cf;">LinkedIn</a> or a DM on <a href="https://www.instagram.com/faris_alasad_/" style="color: #c1f8cf;">Instagram</a> Whether you have a question or just want to say "Hi," I'll try my best to get back to you.</p>
+                        </div>
+                        <p style="color: grey; margin-top: 60px;">&copy; 2024 Faris25-dev</p>
+                    </div> 
 </body>
 </html>
