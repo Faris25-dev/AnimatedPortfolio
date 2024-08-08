@@ -1,3 +1,8 @@
+.container1
+{
+  display: flex;
+  flex-direction: column;
+}
 body
 {
 background-color: rgb(2, 2, 16);
@@ -16,8 +21,8 @@ overflow-x: hidden;
     flex-direction: row;
     margin-bottom: 15rem;
     gap: 2rem;
-    width: 90%;
-    max-width: 21.6rem;
+    width: 99%;
+    max-width: 23.6rem;
     border-radius: 3rem;
     justify-content: center;
     position: fixed;
@@ -32,29 +37,27 @@ button
 
     background-color: rgba(128, 128, 128, 0.162);
     border: rgba(128, 128, 128, 0.162); 
- 
-    color: white;
-    /* margin-left: 1rem; */
-   
-}
-a {
-    
-    text-decoration: none; 
-    position: relative; 
-    /* color: rgb(2, 2, 16); */
     color: white;
 
 }
+a {
+    
+    text-decoration: none !important; 
+    position: relative !important; 
+    color: white;
+    background: none !important; 
+}
+
 a:hover
 {
     background-color: #3b3a47; 
-    /* background-color: red; */
+  
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 button:hover {
-    background-color: #3b3a47; /* Slightly lighter color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+    background-color: #3b3a47;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 .box1:hover
 {
@@ -69,6 +72,15 @@ button:hover {
     /* overflow: hidden;
     box-sizing: border-box; */
 }
+.box2 a
+{
+  display: inline-block; 
+  transition: transform 0.2s ease-in-out !important;
+}
+.box2 a:hover
+{
+  transform: translateY(-5px)!important; 
+}
 .aboutname
 {
     color: white;
@@ -76,7 +88,158 @@ button:hover {
     font-weight: 500;
     font-family: 'Montserrat', sans-serif; 
 }
+.projects{
+  margin-bottom: 20px;
+}
+.project-grid
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 20px;
+  column-gap: 50px;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  background-color: black !important;
+  color: white;
+}
 
+.project-card:hover a i.fa-github {
+  color: white !important;
+}
+
+.project-card
+{
+color: black;
+}
+.project-card {
+  padding: 20px;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  width: 23rem;
+  height: 15rem;
+
+
+}
+.project-card::before {
+  content: "🔗";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.projects h2 {
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.project-card h3 {
+  
+  
+  font-size: 30px;
+  font-weight: 550;
+}
+.project-card p
+{
+  margin-top: 80px;
+  margin-left: 40px;
+}
+.project-card i.fa-github {
+  position: absolute;
+  top: 5px;
+  left: 280px; 
+  font-size: 24px;
+}
+
+
+.webgrid h2
+{
+  color: aliceblue;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+.webgrid
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+row-gap: 20px;
+}
+.web-card {
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  width: 340px;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  border: white solid;
+  box-shadow: whitesmoke 3px 3px 3px;
+}
+.web-card:hover {
+  transform: translateY(-15px); 
+  background-color: #333; 
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2); 
+}
+.web-card a:hover
+{
+  transform: translateY(-15px); 
+  background-color: #333 ;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2); 
+}
+
+.web-card p 
+{
+  font-size: x-large;
+  font-weight: 500;
+margin-bottom: 25px;
+margin-left: 250px;
+}
+.web-card i {
+  position: relative;
+}
+
+.web-card i.github-icon {
+  bottom: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+.web-card i.instagram-icon {
+  top: 10px;
+  right: 10px;
+}
+
+.web-card i.linkedin-icon {
+  bottom: 10px;
+  right: 10px;
+}
+
+.web-card i.blog-icon {
+  bottom: 10px;
+  left: 10px;
+}
+
+.contact
+{
+    margin-top: 20%;
+    width: 75vw; 
+    padding: 3px;
+}
+.contact a {
+  display: inline-block; 
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.contact a:hover {
+  transform: translateY(-5px)!important; 
+}
 @property --progress {
   syntax: "<percentage>";
   inherits: true;
@@ -139,8 +302,9 @@ button:hover {
   filter: drop-shadow(0 0 0.8vmin hsla(0, 0, 0%, 1));
   position: relative;
   width: 40vmin;
-  margin-top: 15%;
+  margin-top: 25%;
   aspect-ratio: 1;
+  z-index: 3;
   
 
   &:after {
@@ -170,7 +334,9 @@ body {
 }
 @media (max-width: 480px) {
     .box1 {
-        flex-direction: column; /* Stack items vertically on small screens */
+         display: flex;
+        flex-direction: column;
+        position:static;
         gap: 1rem;
         width: 40rem;
         height: 12.4rem;
@@ -182,13 +348,27 @@ body {
     background-color: rgb(2, 2, 16);
 
 }
-/* .box2
+ .box2
 {
-    margin-top: 50%;
+  display: flex;
+  flex-direction: column;
+    margin-top: 25%;
     width: 75vw; 
     padding: 3px;
    
+    
 }
-     */
+.container1
+    {
+      display: flex;
+      flex-direction:column;
+      
+    }
+     
 
-}
+  }
+  @media (max-width: 768px) {
+    .linkedin-box {
+      margin-top: 10px; 
+    }
+  }
