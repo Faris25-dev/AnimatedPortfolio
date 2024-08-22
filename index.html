@@ -13,6 +13,7 @@
     
 </header>
 <body>
+    
     <script>
         window.onload = function() {
           document.getElementById('home').scrollIntoView({behavior: 'smooth'});
@@ -25,11 +26,10 @@
     
     <div class="nav"> <!--I feel this div class is useless-->
         <div class="box1">
-            <button style="border-radius: 2em;"><a href="#HOME">Home</a></button>
-            <button style="border-radius: 2em;">
-                <a href="#ABOUT">About</a></button>
-            <button style="border-radius: 2em;"><a href="#PROJECTS">Projects</a></button>
-            <button style="border-radius: 2em;"><a href="#CONTACT">Contact me</a></button>
+            <a href="#HOME"><button style="border-radius: 2em;">Home</button></a>
+            <a href="#ABOUT"><button style="border-radius: 2em;">About</button></a>
+            <a href="#PROJECTS"><button style="border-radius: 2em;">Projects</button></a>
+            <a href="#CONTACT"><button style="border-radius: 2em;">Contact me</button></a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -42,9 +42,9 @@
         </div>
         <div class="box2" id="ABOUT">
             <p style="color:rgb(205, 142, 242);">About — </p>
-            <h4 class="aboutname">Hi,I'm Faris.<br></h4>
+            <h4 class="aboutname">Hi,I'm Faris<br></h4>
 
-               <p style="color: grey; font-size: large;">  I'm a 19-years-old self-taught Front-End Developer. I found my passion for programming after discovering my friend was doing it. What kept me on this journey is that I always find learning new things exciting and facing unfamiliar challenges. In addition to coding, I enjoy building side projects, writing blog posts, and reading books. When I'm not doing anything coding-related, I enjoy spending time with my family and working out. Follow my <a href="https://www.instagram.com/faris_alasad_/?next=%2F" style="color:rgb(174, 240, 75) ;">Instagram</a> to see my journey!</p>
+               <p style="color: grey; font-size: large;">  I'm a 19-year-old self-taught Front-End Developer. I found my passion for programming after discovering my brother was doing it. What kept me on this journey is that I always find learning new things exciting and facing unfamiliar challenges. In addition to coding, I enjoy building side projects, writing blog posts, and reading books. When I'm not doing anything coding-related, I enjoy spending time with my family and working out. Follow my <a href="https://www.instagram.com/faris_alasad_/?next=%2F" style="color:rgb(174, 240, 75) ;">Instagram</a> to see my journey!</p>
                
         </div>
             <!-- </div> -->
@@ -134,5 +134,6 @@
                         </div>
                         <p style="color: grey; margin-top: 60px;">&copy; 2024 Faris25-dev</p>
                     </div> 
+                    <script src="project.js"></script>
 </body>
 </html>
